@@ -37,7 +37,7 @@ class SpringFormationBootApplicationTests {
 	@Autowired
 	private IStagiaireRepository stagiaireDao;
 
-	@Test
+//	@Test
 	public void evaluation() {
 		int startSize = evaluationDao.findAll().size();
 
@@ -94,7 +94,7 @@ class SpringFormationBootApplicationTests {
 		assertEquals(0, (endSize - startSize));
 	}
 
-	@Test
+//	@Test
 	public void stagiaire() throws ParseException {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
