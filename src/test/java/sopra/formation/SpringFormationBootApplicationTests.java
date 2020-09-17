@@ -23,7 +23,7 @@ import sopra.formation.repository.IFiliereRepository;
 import sopra.formation.repository.IFormateurRepository;
 import sopra.formation.repository.IStagiaireRepository;
 
-//@SpringBootTest
+@SpringBootTest
 class SpringFormationBootApplicationTests {
 	@Autowired
 	private IEvaluationRepository evaluationDao;
@@ -37,7 +37,7 @@ class SpringFormationBootApplicationTests {
 	@Autowired
 	private IStagiaireRepository stagiaireDao;
 
-//	@Test
+	@Test
 	public void evaluation() {
 		int startSize = evaluationDao.findAll().size();
 
