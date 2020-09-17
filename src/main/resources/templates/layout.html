@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title layout:title-pattern="$CONTENT_TITLE"></title>
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+<link rel="stylesheet" th:href="@{/css/all.css}">
+<script th:src="@{/js/jquery-3.5.0.min.js}"></script>
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</head>
+<body>
+	<header>
+		<ul class="nav nav-pills m-5">
+			<li class="nav-item"><a class="nav-link" th:classappend="${page == 'home'}? 'active'" th:href="@{/}">Accueil</a></li>
+			<li class="nav-item"><a class="nav-link" th:classappend="${page == 'evaluation'}? 'active'" th:href="@{/evaluation/list}">Evaluation</a></li>
+			<li class="nav-item"><a class="nav-link" th:classappend="${page == 'stagiaire'}? 'active'" th:href="@{/stagiaire/list}">Stagiaire</a></li>
+			<li class="nav-item"><a class="nav-link disabled" th:href="@{/formateur/list}">Formateur</a></li>
+			<li class="nav-item"><a class="nav-link disabled" th:href="@{/matiere/list}">Matière</a></li>
+			<li class="nav-item"><a class="nav-link disabled" th:href="@{/filiere/list}">Filière</a></li>
+			<li class="nav-item"><a class="nav-link disabled" th:href="@{/salle/list}">Salle</a></li>
+		</ul>
+	</header>
+	<div class="container-fluid">
+		<section layout:fragment="monContenu"></section>
+	</div>
+</body>
+</html>
