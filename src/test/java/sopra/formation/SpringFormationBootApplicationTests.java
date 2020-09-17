@@ -23,7 +23,7 @@ import sopra.formation.repository.IFiliereRepository;
 import sopra.formation.repository.IFormateurRepository;
 import sopra.formation.repository.IStagiaireRepository;
 
-@SpringBootTest
+//@SpringBootTest
 class SpringFormationBootApplicationTests {
 	@Autowired
 	private IEvaluationRepository evaluationDao;

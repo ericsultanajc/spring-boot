@@ -17,7 +17,7 @@ public class FormationApplicationTest {
     private MockMvc mockMvc;
 
     @Test
-    public void getsAllRides() throws Exception {
+    public void getsAllMatieres() throws Exception {
         this.mockMvc.perform(MockMvcRequestBuilders.get("/api/matiere")
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
