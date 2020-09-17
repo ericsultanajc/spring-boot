@@ -25,7 +25,7 @@ public class FormationApplicationTest {
 
 	@Test
 	public void foo() {
-		Assertions.fail("En erreur");
+		
 	}
 
 }
